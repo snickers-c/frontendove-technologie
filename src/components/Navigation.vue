@@ -29,19 +29,19 @@ export default defineComponent({
     <div class="nav-main">
       <div class="nav-left">
         <div class="nav-logo">
-          <img src="/images/Logo.svg" alt="logo">
+          <img :src="'images/Logo.svg'" alt="logo">
         </div>
 
         <div class="nav-search">
-          <img src="/images/Search.svg" alt="-O">
+          <img :src="'images/Search.svg'" alt="-O">
           <input type="text" placeholder="Vyhladať">
         </div>
       </div>
 
       <div class="nav-icons">
-        <img src="/images/Basket.svg" alt="košík">
-        <img src="/images/Favorite.svg" alt="oblľúbené">
-        <img id="profile-icon" src="/images/User-icon.png" alt="profil">
+        <img :src="'images/Basket.svg'" alt="košík">
+        <img :src="'images/Favorite.svg'" alt="oblľúbené">
+        <img id="profile-icon" :src="'images/User-icon.png'" alt="profil">
       </div>
     </div>
 
@@ -67,7 +67,6 @@ export default defineComponent({
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
