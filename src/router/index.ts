@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-// import Contact from '../components/Contact.vue'
+import Contact from '../views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,11 +9,15 @@ const router = createRouter({
       path: '/',
       component: HomeView,
     },
-    // {
-    //   path: '/kontakt',
-    //   name: 'kontakt',
-    //   component: Home,
-    // },
+    {
+      path: '/kontakt',
+      name: 'kontakt',
+      component: Contact,
+    },
+    {
+      path: '/frontendove-technologie',
+      component: HomeView,
+    }
   ],
 })
 

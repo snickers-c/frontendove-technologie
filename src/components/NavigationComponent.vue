@@ -5,7 +5,14 @@ export default defineComponent({
   name: 'NavigationComponent',
   data() {
     return {
-      links: ["Oblečenie", "Obuv", "Závažia", "Konštrukcie", "Stroje", "Pomôcky"]
+      links: [
+        { "name": "Oblečenie", "url": "oblecenie" },
+        { "name": "Obuv", "url": "obuv" },
+        { "name": "Závažia", "url": "zavazia" },
+        { "name": "Konštrukcie", "url": "konstrukcie" },
+        { "name": "Stroje", "url": "stroje" },
+        { "name": "Pomôcky", "url": "pomocky" }
+      ]
     }
   },
   methods: {
@@ -55,7 +62,7 @@ export default defineComponent({
 
     <div class="nav-links">
       <div @mouseover="hovered" @mouseleave="hide" v-for="link in links">
-        <RouterLink to="">{{ link }}</RouterLink>
+        <RouterLink :to=link.url>{{ link.name }}</RouterLink>
         <div class="nav-dropdown hide">
           <div class="list">
             <RouterLink to="">Tričká</RouterLink>

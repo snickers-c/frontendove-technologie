@@ -14,8 +14,12 @@ export default {
   </v-carousel>
 
 
-  <v-container>
-    <p>Toto je domov</p>
-    <v-btn>KOMPONENT Z VUETIFY!!!!!</v-btn>
+  <v-container fluid>
+    <v-row>
+      <v-col>
+        <p>Toto je domov</p>
+        <v-btn>KOMPONENT Z VUETIFY!!!!!</v-btn>
+      </v-col>
+    </v-row>
   </v-container>
 </template>

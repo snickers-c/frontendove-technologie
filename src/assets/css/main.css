@@ -68,18 +68,27 @@ input:focus-visible {
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   min-height: 24vh;
-  padding-inline: 30px;
+  padding: 10px 30px;
   background-color: var(--main-color);
+  color: white;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
-  color: white;
+}
+
+.footer-left>a {
+  width: max-content;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
