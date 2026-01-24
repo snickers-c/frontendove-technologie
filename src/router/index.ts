@@ -14,10 +14,10 @@ const router = createRouter({
       name: 'kontakt',
       component: Contact,
     },
-    {
-      path: '/frontendove-technologie',
-      component: HomeView,
-    }
+    // {
+    //   path: '/frontendove-technologie',
+    //   component: HomeView,
+    // }
   ],
 })
 

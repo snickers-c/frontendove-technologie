@@ -35,7 +35,7 @@ export default defineComponent({
       <div class="nav-left">
         <div>
           <RouterLink to="/">
-            <img class="nav-logo" :src="'images/Logo.svg'" alt="logo">
+            <img class="nav-logo" src="/images/Logo.svg" alt="logo">
           </RouterLink>
         </div>
 
