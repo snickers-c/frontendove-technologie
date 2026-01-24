@@ -6,14 +6,12 @@ export default defineComponent({
   data() {
     return {
       links: [
-        { "name": "Kontakt", "url": "kontakt" },
-        { "name": "Obchodné-podmienky", "url": "obchodne-podmienky" },
-        { "name": "Oblečenie", "url": "oblecenie" },
-        { "name": "Obuv", "url": "obuv" },
-        { "name": "Závažia", "url": "zavazia" },
-        { "name": "Konštrukcie", "url": "konstrukcie" },
-        { "name": "Stroje", "url": "stroje" },
-        { "name": "Pomôcky", "url": "pomocky" }
+        { "name": "Oblečenie", "slug": "oblecenie" },
+        { "name": "Obuv", "slug": "obuv" },
+        { "name": "Závažia", "slug": "zavazia" },
+        { "name": "Konštrukcie", "slug": "konstrukcie" },
+        { "name": "Stroje", "slug": "stroje" },
+        { "name": "Pomôcky", "slug": "pomocky" }
       ]
     }
   },
@@ -26,7 +24,10 @@ export default defineComponent({
     <div class="footer-main">
       <div class="footer-left">
         <RouterLink to="/">Domov</RouterLink>
-        <RouterLink v-for="link in links" :to="link.url">{{ link.name }}</RouterLink>
+        <RouterLink to="/kontakt">Kontakt</RouterLink>
+        <RouterLink to="/obchodne-podmienky">Obchodné-podmienky</RouterLink>
+        <RouterLink v-for="link in links" :to="{ name: 'produkty', params: { slug: link.slug } }">{{ link.name }}
+        </RouterLink>
       </div>
     </div>
 

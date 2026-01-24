@@ -6,12 +6,12 @@ export default defineComponent({
   data() {
     return {
       links: [
-        { "name": "Oblečenie", "url": "oblecenie" },
-        { "name": "Obuv", "url": "obuv" },
-        { "name": "Závažia", "url": "zavazia" },
-        { "name": "Konštrukcie", "url": "konstrukcie" },
-        { "name": "Stroje", "url": "stroje" },
-        { "name": "Pomôcky", "url": "pomocky" }
+        { "name": "Oblečenie", "slug": "oblecenie" },
+        { "name": "Obuv", "slug": "obuv" },
+        { "name": "Závažia", "slug": "zavazia" },
+        { "name": "Konštrukcie", "slug": "konstrukcie" },
+        { "name": "Stroje", "slug": "stroje" },
+        { "name": "Pomôcky", "slug": "pomocky" }
       ]
     }
   },
@@ -34,13 +34,13 @@ export default defineComponent({
     <div class="nav-main">
       <div class="nav-left">
         <div>
-          <RouterLink to="/">
+          <RouterLink :to="{ name: 'domov' }">
             <img class="nav-logo" src="/images/Logo.svg" alt="logo">
           </RouterLink>
         </div>
 
         <div class="nav-search">
-          <img :src="'images/Search.svg'" alt="-O">
+          <img src="/images/Search.svg" alt="-O">
           <input type="text" placeholder="Vyhladať">
         </div>
       </div>
@@ -48,21 +48,21 @@ export default defineComponent({
       <div class="nav-icons">
         <RouterLink to="">
           <v-badge class="badge" v-if="true" location="bottom left" color="primary" content="0">
-            <img :src="'images/Basket.svg'" alt="košík">
+            <img src="/images/Basket.svg" alt="košík">
           </v-badge>
         </RouterLink>
         <RouterLink to="">
-          <img :src="'images/Favorite.svg'" alt="oblľúbené">
+          <img src="/images/Favorite.svg" alt="oblľúbené">
         </RouterLink>
         <RouterLink to="">
-          <img id="profile-icon" :src="'images/User-icon.png'" alt="profil">
+          <img id="profile-icon" src="/images/User-icon.png" alt="profil">
         </RouterLink>
       </div>
     </div>
 
     <div class="nav-links">
       <div @mouseover="hovered" @mouseleave="hide" v-for="link in links">
-        <RouterLink :to=link.url>{{ link.name }}</RouterLink>
+        <RouterLink :to="{ name: 'produkty', params: { slug: link.slug } }">{{ link.name }}</RouterLink>
         <div class="nav-dropdown hide">
           <div class="list">
             <RouterLink to="">Tričká</RouterLink>
