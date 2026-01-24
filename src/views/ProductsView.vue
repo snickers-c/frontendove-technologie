@@ -25,17 +25,19 @@ export default {
     },
     rowCount() {
       let count = 0;
-      let i = 0;
+      let i = -1;
       let rows: any = [];
-      for (let p of this.currentProducts) {
-        // if (count % 4 == 0 && count !== 0) {
-        //   count = -1;
-        //   i++;
-        // }
-        rows[i].push({ p });
+      for (const p of this.currentProducts) {
+        if (count % 4 == 0) {
+          if (rows[++i] == undefined) {
+            rows[i] = [];
+          }
+          rows[i].push(p);
+        } else {
+          rows[i].push(p);
+        }
         count++;
       }
-
       return rows;
     },
   }
@@ -60,9 +62,8 @@ export default {
               </v-col>
               <v-col>
                 <v-container fluid>
-                  <!-- v-for="row in rowCount" -->
-                  <v-row>
-                    <v-col v-for="product in currentProducts">
+                  <v-row v-for="row in rowCount">
+                    <v-col cols="3" v-for="product in row">
                       <ProductCard :product=product></ProductCard>
                     </v-col>
                   </v-row>

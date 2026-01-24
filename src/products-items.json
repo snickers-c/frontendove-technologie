@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Tričko Nike Air",
       "price": 13.99,
-      "img": "nike-air-shirt.jpg",
+      "img": "nike-white-shirt1.jpg",
       "desc": "Tričko Nike Air ponúka ľahký a priedušný materiál, ktorý zaručuje pohodlie počas celého dňa. Moderný strih sa prispôsobí postave a je vhodný na tréning aj voľný čas. Minimalistické logo podčiarkuje športový štýl.",
       "brand": "Nike",
       "category": 1
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Tričko Nike Dri-FIT",
       "price": 15.49,
-      "img": "nike-drifit-shirt.jpg",
+      "img": "nike-white-shirt1.jpg",
       "desc": "Funkčné tričko Nike Dri-FIT je navrhnuté pre aktívny pohyb a maximálny komfort. Technológia odvádzania potu udrží telo v suchu a pohodlí. Ideálna voľba pre športovcov aj každodenné nosenie.",
       "brand": "Nike",
       "category": 1
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Tričko Nike Sportswear",
       "price": 14.29,
-      "img": "nike-sportswear-shirt.jpg",
+      "img": "nike-white-shirt1.jpg",
       "desc": "Tričko Nike Sportswear kombinuje nadčasový dizajn s kvalitným spracovaním. Mäkký materiál je príjemný na dotyk a zabezpečuje pohodlie po celý deň. Skvelo sa hodí k športovým aj mestským outfitom.",
       "brand": "Nike",
       "category": 1

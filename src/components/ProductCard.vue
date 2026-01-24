@@ -27,7 +27,7 @@ export default defineComponent({
     <v-container fluid>
       <v-row>
         <v-col align="center">
-          <img class="product-card-img" height="200" :src="'/images/products/' + product.img"></img>
+          <img class="product-card-img" height="200" :src="'/images/products/' + product.img" alt="produkt"></img>
           <v-btn @click.stop="cart" variant="outlined">Do košíka</v-btn>
         </v-col>
       </v-row>
