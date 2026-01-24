@@ -1,18 +1,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
+import productsPages from '../products-pages.json';
 
 export default defineComponent({
   name: "FooterComponent",
   data() {
     return {
-      links: [
-        { "name": "Oblečenie", "slug": "oblecenie" },
-        { "name": "Obuv", "slug": "obuv" },
-        { "name": "Závažia", "slug": "zavazia" },
-        { "name": "Konštrukcie", "slug": "konstrukcie" },
-        { "name": "Stroje", "slug": "stroje" },
-        { "name": "Pomôcky", "slug": "pomocky" }
-      ]
+      links: productsPages.pages,
     }
   },
 });

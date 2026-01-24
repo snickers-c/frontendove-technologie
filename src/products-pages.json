@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "name": "Oblečenie",
+      "slug": "oblecenie"
+    },
+    {
+      "id": 2,
+      "name": "Obuv",
+      "slug": "obuv"
+    },
+    {
+      "id": 3,
+      "name": "Závažia",
+      "slug": "zavazia"
+    },
+    {
+      "id": 4,
+      "name": "Konštrukcie",
+      "slug": "konstrukcie"
+    },
+    {
+      "id": 5,
+      "name": "Stroje",
+      "slug": "stroje"
+    },
+    {
+      "id": 6,
+      "name": "Pomôcky",
+      "slug": "pomocky"
+    }
+  ]
+}
