@@ -23,11 +23,11 @@ export default defineComponent({
 
 <template>
   <v-carousel cycle hide-delimiter-background>
-    <v-carousel-item src="/images/carousel/banner1.webp" cover></v-carousel-item>
+    <v-carousel-item :src="'./images/carousel/banner1.webp'" cover></v-carousel-item>
 
-    <v-carousel-item src="/images/carousel/banner2.png" cover></v-carousel-item>
+    <v-carousel-item :src="'./images/carousel/banner2.png'" cover></v-carousel-item>
 
-    <v-carousel-item src="/images/carousel/banner3.jpg" cover></v-carousel-item>
+    <v-carousel-item :src="'./images/carousel/banner3.jpg'" cover></v-carousel-item>
   </v-carousel>
 
   <v-container fluid>

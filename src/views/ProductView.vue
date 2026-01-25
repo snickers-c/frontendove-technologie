@@ -50,7 +50,7 @@ export default defineComponent({
           <v-container fluid>
             <v-row>
               <v-col cols="4">
-                <img height="500" :src="'/images/products/' + currentProduct?.img" alt="produkt">
+                <img height="500" :src="'./images/products/' + currentProduct?.img" alt="produkt">
               </v-col>
               <v-col>
                 <v-card height="500" :title="currentProduct?.name" :subtitle="'značka: ' + currentProduct?.brand">

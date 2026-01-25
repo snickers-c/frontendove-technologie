@@ -47,7 +47,7 @@ export default defineComponent({
           <v-container fluid>
             <v-row>
               <v-col align="center" cols="1">
-                <img height="55" :src="'/images/products/' + currentProduct?.img" alt="product">
+                <img height="55" :src="'./images/products/' + currentProduct?.img" alt="product">
               </v-col>
               <v-col>
                 <v-card-title>{{ currentProduct?.name }}</v-card-title>
