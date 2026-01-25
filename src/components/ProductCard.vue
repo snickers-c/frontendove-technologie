@@ -13,7 +13,7 @@ export default defineComponent({
   },
   methods: {
     open() {
-      this.$router.push({ name: 'produkt', params: { id: this.product.id } });
+      this.$router.push({ name: 'produkt', params: { slug: this.product.slug } });
     },
     cart() {
 
@@ -23,10 +23,10 @@ export default defineComponent({
 </script>
 
 <template>
-  <v-card @click="open" :title=product.name :text="product.price + '€'">
+  <v-card class="card" @click="open" :title=product.name :text="product.price + '€'">
     <v-container fluid>
       <v-row>
-        <v-col align="center">
+        <v-col class="card-bottom">
           <img class="product-card-img" height="200" :src="'/images/products/' + product.img" alt="produkt"></img>
           <v-btn @click.stop="cart" variant="outlined">Do košíka</v-btn>
         </v-col>
@@ -35,4 +35,17 @@ export default defineComponent({
   </v-card>
 </template>
 
-<style></style>
+<style scoped>
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+</style>

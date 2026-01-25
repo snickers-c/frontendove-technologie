@@ -2,6 +2,7 @@
   "products": [
     {
       "id": 1,
+      "slug": "tricko-sportove-nike",
       "name": "Tričko športové Nike",
       "price": 12.99,
       "img": "nike-white-shirt1.jpg",
@@ -11,6 +12,7 @@
     },
     {
       "id": 2,
+      "slug": "tricko-nike-air",
       "name": "Tričko Nike Air",
       "price": 13.99,
       "img": "nike-white-shirt1.jpg",
@@ -20,6 +22,7 @@
     },
     {
       "id": 3,
+      "slug": "tricko-nike-dri-fit",
       "name": "Tričko Nike Dri-FIT",
       "price": 15.49,
       "img": "nike-white-shirt1.jpg",
@@ -29,6 +32,7 @@
     },
     {
       "id": 4,
+      "slug": "tricko-nike-sportswear",
       "name": "Tričko Nike Sportswear",
       "price": 14.29,
       "img": "nike-white-shirt1.jpg",
@@ -38,11 +42,12 @@
     },
     {
       "id": 5,
-      "name": "",
-      "price": 0,
-      "img": "",
-      "desc": "",
-      "brand": "",
+      "slug": "tricko-adidas-sportswear",
+      "name": "Tričko Adidas Sportswear",
+      "price": 42.99,
+      "img": "nike-white-shirt1.jpg",
+      "desc": "Tričko Adidas Sportswear kombinuje nadčasový dizajn s kvalitným spracovaním. Mäkký materiál je príjemný na dotyk a zabezpečuje pohodlie po celý deň. Skvelo sa hodí k športovým aj mestským outfitom.",
+      "brand": "Adidas",
       "category": 1
     }
   ]

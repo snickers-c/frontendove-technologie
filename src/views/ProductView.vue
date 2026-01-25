@@ -1,25 +1,33 @@
 <script lang="ts">
+import { defineComponent } from 'vue';
 import productsItems from '../products-items.json';
 import { useCartCounterStore } from '../stores/cartCounter';
+import ProductAmount from '@/components/ProductAmount.vue';
 
-export default {
+export default defineComponent({
+  name: 'ProductView',
+  components: {
+    ProductAmount,
+  },
   props: {
-    id: { type: String, required: true },
+    slug: { type: String, required: true },
   },
   data() {
     return {
       products: productsItems.products,
-      counter: useCartCounterStore(),
+      cart: useCartCounterStore(),
+      amount: 1,
     }
-  },
-  methods: {
   },
   computed: {
     currentProduct() {
-      return this.products.find(product => product.id === Number(this.id));
-    }
+      return this.products.find(product => product.slug === this.slug);
+    },
+    g() {
+      return this.amount;
+    },
   },
-}
+})
 </script>
 
 <template>
@@ -38,11 +46,23 @@ export default {
                     <p>{{ currentProduct?.desc }}</p>
                     <br>
                     <p id="price">{{ currentProduct?.price }}€</p>
-                    {{ counter.count }}
+                    {{ cart.count }}
+                    {{ cart.products }}
                   </v-card-text>
 
                   <v-card-actions>
-                    <v-btn @click="counter.addProduct(currentProduct?.id)" variant="outlined">Do košíka</v-btn>
+                    <v-container fluid>
+                      <v-row>
+                        <v-col cols="4">
+                          <ProductAmount v-model:amount="amount"></ProductAmount>
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col>
+                          <v-btn @click="cart.addProduct(currentProduct?.id + '')" variant="outlined">Do košíka</v-btn>
+                        </v-col>
+                      </v-row>
+                    </v-container>
                   </v-card-actions>
                 </v-card>
               </v-col>

@@ -17,9 +17,9 @@ export default defineComponent({
   <div class="footer">
     <div class="footer-main">
       <div class="footer-left">
-        <RouterLink to="/">Domov</RouterLink>
-        <RouterLink to="/kontakt">Kontakt</RouterLink>
-        <RouterLink to="/obchodne-podmienky">Obchodné-podmienky</RouterLink>
+        <RouterLink :to="{ name: 'domov' }">Domov</RouterLink>
+        <RouterLink :to="{ name: 'kontakt' }">Kontakt</RouterLink>
+        <RouterLink :to="{ name: 'obchodne-podmienky' }">Obchodné-podmienky</RouterLink>
         <RouterLink v-for="link in links" :to="{ name: 'produkty', params: { slug: link.slug } }">{{ link.name }}
         </RouterLink>
       </div>

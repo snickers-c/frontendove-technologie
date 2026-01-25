@@ -1,11 +1,13 @@
 <script lang="ts">
+import { defineComponent } from 'vue';
 import productsPages from '../products-pages.json';
 import productsItems from '../products-items.json';
 import ProductCard from '../components/ProductCard.vue';
 
-export default {
+export default defineComponent({
+  name: 'ProductsView',
   components: {
-    ProductCard,
+    ProductCard
   },
   props: {
     slug: { type: String, required: false },
@@ -40,8 +42,8 @@ export default {
       }
       return rows;
     },
-  }
-}
+  },
+})
 </script>
 
 <template>
