@@ -23,7 +23,7 @@ export default defineComponent({
     <v-container fluid>
       <v-row>
         <v-col class="card-bottom">
-          <img class="product-card-img" height="200" :src="'./images/products/' + product.img" alt="produkt"></img>
+          <img class="product-card-img" height="200" :src="'/images/products/' + product.img" alt="produkt"></img>
         </v-col>
       </v-row>
     </v-container>

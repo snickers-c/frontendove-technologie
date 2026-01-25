@@ -18,7 +18,7 @@ export default defineComponent({
       pages: productsPages.pages,
       products: productsItems.products,
       currentPageIndex: 1,
-      itemsPerPage: 4,
+      itemsPerPage: 8,
     }
   },
   computed: {
@@ -54,6 +54,11 @@ export default defineComponent({
       }
       return rows;
     },
+  },
+  watch: {
+    slug() {
+      this.currentPageIndex = 1
+    }
   },
 })
 </script>

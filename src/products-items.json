@@ -59,6 +59,156 @@
       "desc": "Činky Fitness Pro sú ideálne pre domáci aj profesionálny tréning. Odolný materiál zaručuje dlhú životnosť, ergonomický dizajn umožňuje pohodlný úchop a bezpečné cvičenie. Perfektné na posilnenie svalov a zvýšenie kondície.",
       "brand": "Fitness Pro",
       "category": 3
+    },
+    {
+      "id": 7,
+      "slug": "tricko-puma-fitness",
+      "name": "Tričko Puma Fitness",
+      "price": 39.99,
+      "img": "puma-fitness-shirt.webp",
+      "desc": "Tričko Puma Fitness kombinuje moderný dizajn s funkčným materiálom. Mäkké a priedušné, ideálne na šport a každodenné nosenie.",
+      "brand": "Puma",
+      "category": 1
+    },
+    {
+      "id": 8,
+      "slug": "cinky-proline-5kg",
+      "name": "Činky ProLine 5kg",
+      "price": 29.99,
+      "img": "cinky-proline-5kg.webp",
+      "desc": "Činky ProLine 5kg sú ideálne pre domáci tréning. Odolný materiál a ergonomický úchop zaručujú pohodlné a bezpečné cvičenie.",
+      "brand": "ProLine",
+      "category": 3
+    },
+    {
+      "id": 9,
+      "slug": "mikina-nike-sportswear",
+      "name": "Mikina Nike Sportswear",
+      "price": 59.99,
+      "img": "nike-sportswear-hoodie.webp",
+      "desc": "Mikina Nike Sportswear poskytuje pohodlie a štýlový vzhľad. Mäkký materiál a moderný dizajn vhodný na šport aj voľný čas.",
+      "brand": "Nike",
+      "category": 1
+    },
+    {
+      "id": 10,
+      "slug": "guma-na-cvicenie-elastic",
+      "name": "Guma na cvičenie Elastic",
+      "price": 14.99,
+      "img": "guma-elastic.webp",
+      "desc": "Odolná guma na cvičenie pre efektívne posilňovanie svalov a zlepšenie flexibility. Kompaktná a vhodná aj na cestovanie.",
+      "brand": "ElasticFit",
+      "category": 6
+    },
+    {
+      "id": 11,
+      "slug": "sportove-pokladace-adidas",
+      "name": "Športové pokladace Adidas",
+      "price": 49.99,
+      "img": "adidas-shoes.webp",
+      "desc": "Športové pokladace Adidas spájajú pohodlie, odolnosť a moderný dizajn. Ideálne na beh, fitness alebo bežné nosenie.",
+      "brand": "Adidas",
+      "category": 2
+    },
+    {
+      "id": 12,
+      "slug": "tricko-underarmour-training",
+      "name": "Tričko Under Armour Training",
+      "price": 44.99,
+      "img": "underarmour-training.webp",
+      "desc": "Tričko Under Armour Training je priedušné, ľahké a pohodlné. Skvelé na intenzívny tréning aj voľný čas.",
+      "brand": "Under Armour",
+      "category": 1
+    },
+    {
+      "id": 13,
+      "slug": "cinky-proline-10kg",
+      "name": "Činky ProLine 10kg",
+      "price": 49.99,
+      "img": "cinky-proline-10kg.webp",
+      "desc": "ProLine činky 10kg sú vhodné pre domáci aj profesionálny tréning. Odolný povrch a ergonomický úchop pre bezpečné cvičenie.",
+      "brand": "ProLine",
+      "category": 3
+    },
+    {
+      "id": 14,
+      "slug": "mikina-puma-casual",
+      "name": "Mikina Puma Casual",
+      "price": 54.99,
+      "img": "puma-casual-hoodie.webp",
+      "desc": "Mikina Puma Casual je pohodlná a štýlová. Mäkký materiál je príjemný na nosenie po celý deň.",
+      "brand": "Puma",
+      "category": 1
+    },
+    {
+      "id": 15,
+      "slug": "guma-na-cvicenie-pro",
+      "name": "Guma na cvičenie Pro",
+      "price": 19.99,
+      "img": "guma-pro.webp",
+      "desc": "Odolná guma Pro na cvičenie je vhodná pre posilnenie svalov a rehabilitačné cviky. Kompaktná a ľahko prenosná.",
+      "brand": "ElasticFit",
+      "category": 6
+    },
+    {
+      "id": 16,
+      "slug": "sportove-boty-nike-air",
+      "name": "Športové boty Nike Air",
+      "price": 89.99,
+      "img": "nike-air.webp",
+      "desc": "Nike Air poskytuje maximálne pohodlie pri behu a športe. Moderný dizajn a odolný materiál zaručujú štýl aj výkon.",
+      "brand": "Nike",
+      "category": 2
+    },
+    {
+      "id": 17,
+      "slug": "tricko-adidas-training",
+      "name": "Tričko Adidas Training",
+      "price": 41.99,
+      "img": "adidas-training.webp",
+      "desc": "Tričko Adidas Training je priedušné a ľahké, ideálne na intenzívny tréning a športové aktivity.",
+      "brand": "Adidas",
+      "category": 1
+    },
+    {
+      "id": 18,
+      "slug": "cinky-proline-15kg",
+      "name": "Činky ProLine 15kg",
+      "price": 69.99,
+      "img": "cinky-proline-15kg.webp",
+      "desc": "Činky ProLine 15kg sú vhodné na intenzívny tréning a posilňovanie svalov. Ergonomický úchop zaisťuje pohodlie a bezpečnosť.",
+      "brand": "ProLine",
+      "category": 3
+    },
+    {
+      "id": 19,
+      "slug": "mikina-underarmour-casual",
+      "name": "Mikina Under Armour Casual",
+      "price": 57.99,
+      "img": "underarmour-casual.webp",
+      "desc": "Mikina Under Armour Casual je pohodlná a odolná, vhodná na šport aj každodenné nosenie.",
+      "brand": "Under Armour",
+      "category": 1
+    },
+    {
+      "id": 20,
+      "slug": "guma-elastic-advanced",
+      "name": "Guma Elastic Advanced",
+      "price": 24.99,
+      "img": "guma-elastic-advanced.webp",
+      "desc": "Elastic Advanced je profesionálna guma na cvičenie. Pomáha pri posilňovaní, rehabilitácii a zlepšení flexibility.",
+      "brand": "ElasticFit",
+      "category": 6
+    },
+    {
+      "id": 21,
+      "slug": "sportove-boty-adidas-run",
+      "name": "Športové boty Adidas Run",
+      "price": 84.99,
+      "img": "adidas-run.webp",
+      "desc": "Adidas Run poskytuje pohodlie a odolnosť pri behu a športových aktivitách. Moderný dizajn pre každý deň.",
+      "brand": "Adidas",
+      "category": 2
     }
   ]
 }

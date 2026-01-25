@@ -17,8 +17,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: "/frontendove-technologie/",
-  // base: "",
+  // base: "/frontendove-technologie/",
+  base: "",
   build: {
     outDir: 'docs',
   }
