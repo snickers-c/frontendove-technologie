@@ -1,6 +1,5 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-// import type Product from '../types/product';
 
 export default defineComponent({
   name: 'ProductCard',
@@ -15,9 +14,6 @@ export default defineComponent({
     open() {
       this.$router.push({ name: 'produkt', params: { slug: this.product.slug } });
     },
-    cart() {
-
-    }
   }
 })
 </script>
@@ -28,7 +24,6 @@ export default defineComponent({
       <v-row>
         <v-col class="card-bottom">
           <img class="product-card-img" height="200" :src="'/images/products/' + product.img" alt="produkt"></img>
-          <v-btn @click.stop="cart" variant="outlined">Do košíka</v-btn>
         </v-col>
       </v-row>
     </v-container>

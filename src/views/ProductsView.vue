@@ -3,11 +3,12 @@ import { defineComponent } from 'vue';
 import productsPages from '../products-pages.json';
 import productsItems from '../products-items.json';
 import ProductCard from '../components/ProductCard.vue';
+import FilterComponent from '@/components/FilterComponent.vue';
 
 export default defineComponent({
   name: 'ProductsView',
   components: {
-    ProductCard
+    ProductCard, FilterComponent
   },
   props: {
     slug: { type: String, required: false },
@@ -23,6 +24,7 @@ export default defineComponent({
       return this.pages.find(page => page.slug === this.slug);
     },
     currentProducts() {
+      if (this.currentPage?.id === undefined) return this.products;
       return this.products.filter(product => product.category === this.currentPage?.id)
     },
     rowCount() {
@@ -60,10 +62,16 @@ export default defineComponent({
 
             <v-row class="products-row">
               <v-col cols="3">
-                filter
+                <FilterComponent></FilterComponent>
               </v-col>
               <v-col>
                 <v-container fluid>
+                  <v-row v-if="currentProducts.length == 0">
+                    <v-col>
+                      <v-card text="Nenašli sa žiadne produkty">
+                      </v-card>
+                    </v-col>
+                  </v-row>
                   <v-row v-for="row in rowCount">
                     <v-col cols="3" v-for="product in row">
                       <ProductCard :product=product></ProductCard>

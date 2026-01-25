@@ -1,7 +1,7 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, toHandlers } from 'vue';
 import productsItems from '../products-items.json';
-import { useCartCounterStore } from '../stores/cartCounter';
+import { useCartStore } from '../stores/cart';
 import ProductAmount from '@/components/ProductAmount.vue';
 
 export default defineComponent({
@@ -15,16 +15,28 @@ export default defineComponent({
   data() {
     return {
       products: productsItems.products,
-      cart: useCartCounterStore(),
-      amount: 1,
+      cart: useCartStore(),
+      newAmount: 1,
     }
   },
   computed: {
+    amount: {
+      get(): number {
+        const product = this.cart.products.find(product => product.id === this.currentProduct?.id);
+        return product ? product.amount : this.newAmount;
+      },
+      set(value: number) {
+        if (!this.currentProduct) return;
+        const product = this.cart.products.find(product => product.id === this.currentProduct?.id);
+        if (product) {
+          this.cart.setAmount(this.currentProduct.id, value);
+        } else {
+          this.newAmount = value;
+        }
+      },
+    },
     currentProduct() {
       return this.products.find(product => product.slug === this.slug);
-    },
-    g() {
-      return this.amount;
     },
   },
 })
@@ -46,8 +58,6 @@ export default defineComponent({
                     <p>{{ currentProduct?.desc }}</p>
                     <br>
                     <p id="price">{{ currentProduct?.price }}€</p>
-                    {{ cart.count }}
-                    {{ cart.products }}
                   </v-card-text>
 
                   <v-card-actions>
@@ -59,7 +69,9 @@ export default defineComponent({
                       </v-row>
                       <v-row>
                         <v-col>
-                          <v-btn @click="cart.addProduct(currentProduct?.id + '')" variant="outlined">Do košíka</v-btn>
+                          <v-btn v-if="currentProduct"
+                            @click="cart.addProduct(currentProduct.id, amount, currentProduct.price)"
+                            variant="outlined">Do košíka</v-btn>
                         </v-col>
                       </v-row>
                     </v-container>

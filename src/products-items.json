@@ -5,7 +5,7 @@
       "slug": "tricko-sportove-nike",
       "name": "Tričko športové Nike",
       "price": 12.99,
-      "img": "nike-white-shirt1.jpg",
+      "img": "nike-shirt1.jpg",
       "desc": "Štýlové tričko Nike spája moderný dizajn, kvalitný materiál a pohodlný strih. Je ideálne na šport aj bežné nosenie, dobre odvádza pot a zachováva tvar. Nadčasové logo dodáva sebavedomý vzhľad každý deň.",
       "brand": "Nike",
       "category": 1
@@ -15,7 +15,7 @@
       "slug": "tricko-nike-air",
       "name": "Tričko Nike Air",
       "price": 13.99,
-      "img": "nike-white-shirt1.jpg",
+      "img": "nike-shirt2.webp",
       "desc": "Tričko Nike Air ponúka ľahký a priedušný materiál, ktorý zaručuje pohodlie počas celého dňa. Moderný strih sa prispôsobí postave a je vhodný na tréning aj voľný čas. Minimalistické logo podčiarkuje športový štýl.",
       "brand": "Nike",
       "category": 1
@@ -25,7 +25,7 @@
       "slug": "tricko-nike-dri-fit",
       "name": "Tričko Nike Dri-FIT",
       "price": 15.49,
-      "img": "nike-white-shirt1.jpg",
+      "img": "nike-shirt3.webp",
       "desc": "Funkčné tričko Nike Dri-FIT je navrhnuté pre aktívny pohyb a maximálny komfort. Technológia odvádzania potu udrží telo v suchu a pohodlí. Ideálna voľba pre športovcov aj každodenné nosenie.",
       "brand": "Nike",
       "category": 1
@@ -35,7 +35,7 @@
       "slug": "tricko-nike-sportswear",
       "name": "Tričko Nike Sportswear",
       "price": 14.29,
-      "img": "nike-white-shirt1.jpg",
+      "img": "nike-shirt4.webp",
       "desc": "Tričko Nike Sportswear kombinuje nadčasový dizajn s kvalitným spracovaním. Mäkký materiál je príjemný na dotyk a zabezpečuje pohodlie po celý deň. Skvelo sa hodí k športovým aj mestským outfitom.",
       "brand": "Nike",
       "category": 1
@@ -45,10 +45,20 @@
       "slug": "tricko-adidas-sportswear",
       "name": "Tričko Adidas Sportswear",
       "price": 42.99,
-      "img": "nike-white-shirt1.jpg",
+      "img": "adidas-shirt1.webp",
       "desc": "Tričko Adidas Sportswear kombinuje nadčasový dizajn s kvalitným spracovaním. Mäkký materiál je príjemný na dotyk a zabezpečuje pohodlie po celý deň. Skvelo sa hodí k športovým aj mestským outfitom.",
       "brand": "Adidas",
       "category": 1
+    },
+    {
+      "id": 6,
+      "slug": "cinky-fitness-pro",
+      "name": "Činky Fitness Pro",
+      "price": 79.99,
+      "img": "cinky1.webp",
+      "desc": "Činky Fitness Pro sú ideálne pre domáci aj profesionálny tréning. Odolný materiál zaručuje dlhú životnosť, ergonomický dizajn umožňuje pohodlný úchop a bezpečné cvičenie. Perfektné na posilnenie svalov a zvýšenie kondície.",
+      "brand": "Fitness Pro",
+      "category": 3
     }
   ]
 }

@@ -1,24 +1,23 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import productsPages from '../products-pages.json';
+import { useCartStore } from '@/stores/cart';
 
 export default defineComponent({
   name: 'NavigationComponent',
   data() {
     return {
       links: productsPages.pages,
+      cart: useCartStore(),
     }
   },
   methods: {
-    hovered(event: any) {
-      event.currentTarget.children[1].classList.remove("hide");
-    },
-    hide(event: any) {
-      event.currentTarget.children[1].classList.add("hide");
-    }
-  },
-  mounted() {
-
+    // hovered(event: any) {
+    //   event.currentTarget.children[1].classList.remove("hide");
+    // },
+    // hide(event: any) {
+    //   event.currentTarget.children[1].classList.add("hide");
+    // }
   },
 });
 </script>
@@ -33,31 +32,32 @@ export default defineComponent({
           </RouterLink>
         </div>
 
-        <div class="nav-search">
+        <!-- <div class="nav-search">
           <img src="/images/Search.svg" alt="-O">
           <input type="text" placeholder="Vyhladať">
-        </div>
+        </div> -->
       </div>
 
       <div class="nav-icons">
-        <RouterLink to="">
-          <v-badge class="badge" v-if="true" location="bottom left" color="primary" content="0">
+        <RouterLink :to="{ name: 'kosik' }">
+          <v-badge class="badge" v-if="true" location="bottom left" color="primary" :content="cart.totalAmount">
             <img src="/images/Basket.svg" alt="košík">
           </v-badge>
         </RouterLink>
-        <RouterLink to="">
+        <!-- <RouterLink to="">
           <img src="/images/Favorite.svg" alt="oblľúbené">
         </RouterLink>
         <RouterLink to="">
           <img id="profile-icon" src="/images/User-icon.png" alt="profil">
-        </RouterLink>
+        </RouterLink> -->
       </div>
     </div>
 
     <div class="nav-links">
-      <div @mouseover="hovered" @mouseleave="hide" v-for="link in links">
+      <!-- @mouseover="hovered" @mouseleave="hide" -->
+      <div v-for="link in links">
         <RouterLink :to="{ name: 'produkty', params: { slug: link.slug } }">{{ link.name }}</RouterLink>
-        <div class="nav-dropdown hide">
+        <!-- <div class="nav-dropdown hide">
           <div class="list">
             <RouterLink to="">Tričká</RouterLink>
             <div class="nav-dropdown-links">
@@ -75,7 +75,7 @@ export default defineComponent({
               <RouterLink to="">c</RouterLink>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
