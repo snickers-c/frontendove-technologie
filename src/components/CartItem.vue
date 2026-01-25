@@ -53,7 +53,7 @@ export default defineComponent({
                 <v-card-title>{{ currentProduct?.name }}</v-card-title>
                 <v-card-subtitle>{{ currentProduct?.price }}€</v-card-subtitle>
               </v-col>
-              <v-col cols="2">spolu: {{ (currentProduct?.price || 0) * amount }}€</v-col>
+              <v-col cols="2">spolu: {{ Math.round((currentProduct?.price || 0) * amount * 100) / 100 }}€</v-col>
               <v-col>
                 <ProductAmount v-model:amount="amount"></ProductAmount>
               </v-col>
